@@ -34,22 +34,19 @@ SOCIALS = {
 SKILLS = {
     "Transformers & Tokenizers": 90,
     "Fine-tuning (LoRA, RLHF…)": 80,
-    "PyTorch / TensorFlow":      85,
-    "Scikit-Learn":              80,
+    "PyTorch / TensorFlow / Scikit-Learn":      85,
     "CNN / RNN / MLP":           75,
-    "Python / MicroPython":     95,
+    "Python / Pandas / NumPy / Polars":     95,
     "C / C++ / JavaScript":     75,
     "SQL / Mysql / PostgreSQL": 90,
     "LangChain / HuggingFace":  80,
     "Symbolic & Multi-Agent AI":70,
-    "Pandas / NumPy / Polars":90,
     "Docker / Git / CI-CD":75,
     "AWS (Athena, Lambda, Glue, S3 , Redshift)": 85,
     "Linux / Bash ":90,
     "YOLOv8/YOLOv11":80,
     "XGBoost / CatBoost / HistGB":    85
 }
-
 EXPERIENCE = [
     {
         "role":    "Business Intelligence Engineer Intern",
