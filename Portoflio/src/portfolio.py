@@ -177,13 +177,13 @@ EDUCATION = [
     },
     {
         "degree":  "Master 1 in AI and Fundamental CS",
-        "school":  "Faculte des science , Ferhat Abbas Setif ",
+        "school":  "Faculté des science , Ferhat Abbas University ",
         "period":  "Sep 2023 – Sep 2024",
         "location":"Sétif, Algerie",
     },
     {
         "degree":  "Bachelor's in Computer Systems",
-        "school":  "Ferhat Abbas University",
+        "school":  "Faculté des science , Ferhat Abbas University ",
         "period":  "Sep 2019 – Aug 2022",
         "location":"Sétif, Algeria",
     },
