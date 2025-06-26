@@ -172,14 +172,14 @@ EDUCATION = [
     {
         "degree":  "Master in Artificial Intelligence (MIAS)",
         "school":  "École Centrale de Lille",
-        "period":  "Sep 2023 – Oct 2025",
+        "period":  "Sep 2023 – July 2025",
         "location":"Villeneuve-d'Ascq, France",
     },
     {
         "degree":  "Master 1 in AI and Fundamental CS",
-        "school":  "École Centrale de Lille",
+        "school":  "Faculte des science , Ferhat Abbas Setif ",
         "period":  "Sep 2023 – Sep 2024",
-        "location":"Villeneuve-d'Ascq, France",
+        "location":"Sétif, Algerie",
     },
     {
         "degree":  "Bachelor's in Computer Systems",
