@@ -740,6 +740,26 @@ with st.container():
     """)
 
 # --------------------------------------------------
+# Education Section
+# --------------------------------------------------
+
+with st.container():
+    st.markdown("""
+    <h2 style='color: #e0e7ff; margin-bottom: 2rem; font-size: 2rem; font-weight: 600;'>
+        Education
+    </h2>
+    """, unsafe_allow_html=True)
+
+    for edu in EDUCATION:
+        st.markdown(f"""
+        <div style='margin-bottom: 1.8rem; padding: 1.2rem; background: rgba(255,255,255,0.05); border-left: 4px solid #60a5fa; border-radius: 0.75rem;'>
+            <div style='font-size: 1.1rem; font-weight: 600; color: #e0e7ff;'>{edu['degree']}</div>
+            <div style='color: #60a5fa; font-size: 1rem; font-weight: 500;'>{edu['school']}</div>
+            <div style='color: #94a3b8; font-size: 0.95rem;'>{edu['period']} — {edu['location']}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+# --------------------------------------------------
 # Experience (Modern Card Layout with Glowing Blue/Violet Grid)
 # --------------------------------------------------
 with st.container():
