@@ -37,7 +37,7 @@ SKILLS = {
     "PyTorch / TensorFlow / Scikit-Learn":      85,
     "CNN / RNN / MLP":           75,
     "Python / Pandas / NumPy / Polars":     95,
-    "C / C++ / JavaScript":     75,
+    "C / C++ / JavaScript":     50,
     "SQL / Mysql / PostgreSQL": 90,
     "LangChain / HuggingFace":  80,
     "Symbolic & Multi-Agent AI":70,
