@@ -13,8 +13,8 @@ except ImportError:
 # ASSETS & DATA
 # --------------------------------------------------
 NAME    = "Djelloul Amel Aicha"
-ROLE    = "AI/ML Engineer"
-TAGLINE = "Building scalable language-driven solutions for real-world impact"
+ROLE    = "Data/ML Engineer & Software Developer "
+TAGLINE = "From raw data to Dockerized ML—fast, reliable, and at scale."
 
 HERE        = Path(__file__).resolve().parent
 ASSETS      = HERE.parent / "assets"
@@ -27,7 +27,7 @@ PHONE    = "+33 7 74 97 83 44"
 LOCATION = "France/Luxembourg"
 SOCIALS = {
     "LinkedIn": "https://www.linkedin.com/in/aicha-amel-d-b3349010b/",
-    "GitHub":   "https://github.com/aichaamel",
+    #"GitHub":   "https://github.com/aichaamel",
     "Kaggle":   "https://www.kaggle.com/amelaichadjelloul",
 }
 
@@ -49,25 +49,29 @@ SKILLS = {
 }
 EXPERIENCE = [
     {
-        "role":    "Business Intelligence Engineer Intern",
+        "role":    "Data Scientist Intern",
         "company": "Amazon",
-        "period":  "Jan 2025 – Present",
-        "details": (
-            "Optimized Same-Day Delivery network across Europe, delivering 4 optimisation modules that achieved over €1.9M in ROI.\n"
-            "Built performance monitoring and decision-support tools using AWS services (Athena, S3, Lambda, Glue).\n"
-            "Collaborated with science, ops, and product teams to turn business problems into scalable data-driven solutions."
-        )
+        "period":  "Jan 2025 – Jul 2025 ",
+         "details": (
+        "**Project 1 – Same-Day Delivery Optimisation**  \n"
+        "• Delivered **4 optimisation modules** that unlocked **€ 1.9 M+ ROI** for the EU network.  \n"
+        "• Implemented in **Python & Rust**, containerised with **Docker**, and powered by **Athena, S3, Lambda, Glue, Redshift** for end-to-end data flow and decision support.  \n\n"
+        "**Project 2 – Peak-Speed & In-Stock Forecasting**  \n"
+        "• Designed a near-real-time forecasting pipeline in **PySpark** on **AWS Glue/S3**.  \n"
+        "• Leveraged **Prophet / DeepProphet** models to predict peak-day speed (≤ 1-day) and ASIN in-stock levels with high accuracy, enabling proactive inventory and capacity planning."
+    )
     },
     {
-        "role":    "Business Intelligence Engineer Intern",
+        "role":    "Data Scientist Intern",
         "company": "Amazon",
         "period":  "Apr 2024 – Sep 2024",
-        "details": (
-            "Improved global transportation insights using SQL, Python, and Redshift.\n"
-            "Automated pipelines (100x faster), reducing manual workload and improving reporting speed.\n"
-            "Collaborated with PMs and engineers on scalable data models and metric tracking.\n"
-            "Implemented robust data validation for accurate reporting and workflow optimization."
-        )
+         "details": (
+        "Designed a global, **probabilistic-optimisation** service for **Amazon Global Transportation Services (GTS)**.  \n"
+        "End-to-end pipeline: **Cradle** → **Lambda**-orchestrated training & inference → scored outputs to **S3**.  \n"
+        "Replaced slow, SQL-only reports with stochastic models that predict network speed and stock availability.  \n"
+        "Rolled out company-wide, supporting **Next-Day** & middle-mile teams on four continents.  \n"
+        "**Impact:** > $XXX M annual savings through faster, data-driven decisions."
+    )
     },
     {
         "role":    "Freelance Python Odoo Developer",
