@@ -52,26 +52,27 @@ EXPERIENCE = [
         "role":    "Data Scientist Intern",
         "company": "Amazon",
         "period":  "Jan 2025 – Jul 2025 ",
-         "details": (
-        "**Project 1 – Same-Day Delivery Optimisation**  \n"
-        "• Delivered **4 optimisation modules** that unlocked **€ 1.9 M+ ROI** for the EU network.  \n"
-        "• Implemented in **Python & Rust**, containerised with **Docker**, and powered by **Athena, S3, Lambda, Glue, Redshift** for end-to-end data flow and decision support.  \n\n"
-        "**Project 2 – Peak-Speed & In-Stock Forecasting**  \n"
-        "• Designed a near-real-time forecasting pipeline in **PySpark** on **AWS Glue/S3**.  \n"
-        "• Leveraged **Prophet / DeepProphet** models to predict peak-day speed (≤ 1-day) and ASIN in-stock levels with high accuracy, enabling proactive inventory and capacity planning."
-    )
+        "details": (
+    "<strong>Project 1 – Same-Day Delivery Optimisation</strong><br>"
+    "• Delivered <strong>4 optimisation modules</strong> that unlocked <strong>€ 1.9 M+ ROI</strong> for the EU network.<br>"
+    "• Implemented in <strong>Python & Rust</strong>, containerised with <strong>Docker</strong>, and powered by <strong>Athena, S3, Lambda, Glue, Redshift</strong> for end-to-end data flow and decision support.<br><br>"
+    "<strong>Project 2 – Peak-Speed & In-Stock Forecasting</strong><br>"
+    "• Designed a near-real-time forecasting pipeline in <strong>PySpark</strong> on <strong>AWS Glue/S3</strong>.<br>"
+    "• Leveraged <strong>Prophet / DeepProphet</strong> models to predict peak-day speed (≤ 1-day) and ASIN in-stock levels with high accuracy, enabling proactive inventory and capacity planning."
+)
     },
     {
         "role":    "Data Scientist Intern",
         "company": "Amazon",
         "period":  "Apr 2024 – Sep 2024",
-         "details": (
-        "Designed a global, **probabilistic-optimisation** service for **Amazon Global Transportation Services (GTS)**.  \n"
-        "End-to-end pipeline: **Cradle** → **Lambda**-orchestrated training & inference → scored outputs to **S3**.  \n"
-        "Replaced slow, SQL-only reports with stochastic models that predict network speed and stock availability.  \n"
-        "Rolled out company-wide, supporting **Next-Day** & middle-mile teams on four continents.  \n"
-        "**Impact:** > $XXX M annual savings through faster, data-driven decisions."
-    )
+        "details": (
+        "Designed a global, <strong>probabilistic-optimisation</strong> service for <strong>Amazon Global Transportation Services (GTS)</strong>.<br>"
+    "End-to-end pipeline: <strong>Cradle</strong> → <strong>Lambda</strong>-orchestrated training & inference → scored outputs to <strong>S3</strong>.<br>"
+    "Replaced slow, SQL-only reports with stochastic models that predict network speed and stock availability.<br>"
+    "Rolled out company-wide, supporting <strong>Next-Day</strong> & middle-mile teams on four continents.<br>"
+    "<strong>Impact:</strong> > $XXX M annual savings through faster, data-driven decisions."
+)
+
     },
     {
         "role":    "Freelance Python Odoo Developer",
@@ -623,11 +624,28 @@ with st.container():
         st.markdown(f"<h3 style='margin-top:0'>{ROLE}</h3>", unsafe_allow_html=True)
         st.write(TAGLINE)
         render_socials(SOCIALS)
-        if RESUME_PATH.exists():
-            with open(RESUME_PATH, "rb") as f:
-                st.download_button("⬇ Download CV", data=f.read(), file_name=RESUME_PATH.name, mime="application/pdf")
+        FRENCH_RESUME_PATH = ASSETS / "FR_djelloul_amel_aicha.pdf"
+
+        if RESUME_PATH.exists() and FRENCH_RESUME_PATH.exists():
+            col_eng, col_fr = st.columns(2)
+            with col_eng:
+                with open(RESUME_PATH, "rb") as f:
+                    st.download_button(
+                        label="⬇ Download CV (English)",
+                        data=f.read(),
+                        file_name="EN_djelloul_amel_aicha.pdf",
+                        mime="application/pdf"
+                    )
+            with col_fr:
+                with open(FRENCH_RESUME_PATH, "rb") as f:
+                    st.download_button(
+                        label="⬇ Télécharger le CV (Français)",
+                        data=f.read(),
+                        file_name="FR_djelloul_amel_aicha.pdf",
+                        mime="application/pdf"
+                    )
         else:
-            st.info("Add your CV PDF next to this script to enable the download button.")
+            st.info("Please make sure both English and French resumes exist in the 'assets' folder.")
 
     with right:
         st.markdown("""
