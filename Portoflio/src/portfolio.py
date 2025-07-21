@@ -18,7 +18,7 @@ TAGLINE = "From raw data to Dockerized ML—fast, reliable, and at scale."
 
 HERE        = Path(__file__).resolve().parent
 ASSETS      = HERE.parent / "assets"
-RESUME_PATH = ASSETS / "EN_LV.pdf"
+RESUME_PATH = ASSETS / "EN_djelloul_amel_aicha.pdf"
 VIDEO_PATH  = ASSETS / "istockphoto-1298701454-640_adpp_is.mp4"
 PROFILE_IMG = ASSETS / "background.png"
 
