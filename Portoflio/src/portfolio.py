@@ -18,7 +18,7 @@ TAGLINE = "From raw data to Dockerized ML—fast, reliable, and at scale."
 
 HERE        = Path(__file__).resolve().parent
 ASSETS      = HERE.parent / "assets"
-RESUME_PATH = ASSETS / "EN_djelloul_amel_aicha.pdf"
+RESUME_PATH = ASSETS / "EN_aicha_amel_djelloul.pdf"
 VIDEO_PATH  = ASSETS / "istockphoto-1298701454-640_adpp_is.mp4"
 PROFILE_IMG = ASSETS / "background.png"
 
@@ -624,7 +624,7 @@ with st.container():
         st.markdown(f"<h3 style='margin-top:0'>{ROLE}</h3>", unsafe_allow_html=True)
         st.write(TAGLINE)
         render_socials(SOCIALS)
-        FRENCH_RESUME_PATH = ASSETS / "FR_djelloul_amel_aicha.pdf"
+        FRENCH_RESUME_PATH = ASSETS / "FR_aicha_amel_djelloul.pdf"
 
         if RESUME_PATH.exists() and FRENCH_RESUME_PATH.exists():
             st.markdown("""
@@ -641,7 +641,7 @@ with st.container():
                     st.download_button(
                         label="⬇ Download CV (English)",
                         data=f.read(),
-                        file_name="EN_djelloul_amel_aicha.pdf",
+                        file_name="EN_aicha_amel_djelloul.pdf",
                         mime="application/pdf"
                     )
             with col_fr:
@@ -649,7 +649,7 @@ with st.container():
                     st.download_button(
                         label="⬇ Télécharger le CV (Français)",
                         data=f.read(),
-                        file_name="FR_djelloul_amel_aicha.pdf",
+                        file_name="FR_aicha_amel_djelloul.pdf",
                         mime="application/pdf"
                     )
         else:
@@ -939,10 +939,12 @@ with st.container():
             <i class="fab fa-linkedin"></i>
             <span>LinkedIn</span>
         </a>
-        <a href="https://github.com/aichaamel" target="_blank" class="social-link">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-        </a>
+        <!--
+            <a href="https://github.com/aichaamel" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        -->
         <a href="https://www.kaggle.com/amelaichadjelloul" target="_blank" class="social-link">
             <i class="fab fa-kaggle"></i>
             <span>Kaggle</span>
