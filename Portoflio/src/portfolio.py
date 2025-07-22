@@ -627,6 +627,14 @@ with st.container():
         FRENCH_RESUME_PATH = ASSETS / "FR_djelloul_amel_aicha.pdf"
 
         if RESUME_PATH.exists() and FRENCH_RESUME_PATH.exists():
+            st.markdown("""
+                    <style>
+                    button[data-baseweb="button"] > div {
+                        color: black !important;
+                        font-weight: bold;
+                    }
+                    </style>
+                    """, unsafe_allow_html=True)
             col_eng, col_fr = st.columns(2)
             with col_eng:
                 with open(RESUME_PATH, "rb") as f:
@@ -646,7 +654,6 @@ with st.container():
                     )
         else:
             st.info("Please make sure both English and French resumes exist in the 'assets' folder.")
-
     with right:
         st.markdown("""
         <div style='padding: 1.5em 0 0 0;'>
